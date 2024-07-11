@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>بارگذاری فایل</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>سرور انتقال فایل</h1>
+      <nav>
+        <ul class="nav">
+        <li><a href="{{ url_for('index') }}">خانه</a></li>
+        <li><a href="{{ url_for('upload_file') }}">آپلود فایل</a></li>
+        <li><a href="{{ url_for('list_files') }}">فایل‌‌های آپلود شده</a></li>
+        <li><a href="{{ url_for('list_shared_files') }}">فایل‌های اشتراک گذاری شده</a></li>
+        <li><a href="{{ url_for('list_media_files') }}">فایل‌های مدیا</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>بارگذاری فایل(ها)</h2>
+      <form method="post" enctype="multipart/form-data">
+        <input type="file" name="files" multiple>
+        <input type="submit" value="Upload">
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>

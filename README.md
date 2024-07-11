@@ -11,7 +11,10 @@
 │   ├── files.html
 │   ├── shared_files.html
 │   ├── media_files.html
-│
+|
+├── static
+│   ├── style.css
+|
 ├── app.py
 ├── requirements.txt
 └── README.md
